@@ -22,7 +22,10 @@ public class CategoryService implements ICategoryService{
 
 	@Override
 	public List<Category> findAll() {
-		// TODO Auto-generated method stub
+		List<Category> lst = catDao.findAll();
+		for (Category category : lst) {
+			System.out.println(category.getImages());
+		}
 		return catDao.findAll();
 	}
 

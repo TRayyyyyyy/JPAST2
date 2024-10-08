@@ -41,6 +41,4 @@ public class Video implements Serializable {
 	@JoinColumn(name="CategoryId")
 	private Category category;
 	
-	
-	
 }

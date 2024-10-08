@@ -92,7 +92,7 @@ public class CategoryController extends HttpServlet {
 	        		String ext =  filename.substring(index+1);
 	        		fname = System.currentTimeMillis() + "." + ext;
 	        		// upload file
-	        		part.write(uploadPath + "/" + filename);
+	        		part.write(uploadPath + "/" + fname);
 	        		//ghi ten vao data
 	        		category.setImages(fname);
 	        	}
@@ -133,7 +133,7 @@ public class CategoryController extends HttpServlet {
 	        		String ext =  filename.substring(index+1);
 	        		fname = System.currentTimeMillis() + "." + ext;
 	        		// upload file
-	        		part.write(uploadPath + "/" + filename);
+	        		part.write(uploadPath + "/" + fname);
 	        		//ghi ten vao data
 	        		category.setImages(fname);
 	        	}
