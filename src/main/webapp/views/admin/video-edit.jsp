@@ -15,7 +15,7 @@
 	        </c:if>
         
         <img id="poster" height="150" width="200" src="${imgUrl}" />
-        <input type="file" onchange="chooseFile(this)" id="poster" name="Poster" accept="video/*"><br><br>
+        <input type="file" onchange="chooseFile(this)" id="poster" name="Poster" ><br><br>
         
         
         <label for="videoId">Video ID:</label>

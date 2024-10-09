@@ -6,7 +6,7 @@
         <legend>Upload Video</legend>
         
         <label for="videoFile">Choose file:</label>
-		<input type="file" onchange = "chooseFile(this)" id="poster" name="Poster" accept="video/*"><br><br>
+		<input type="file" onchange = "chooseFile(this)" id="poster" name="Poster" ><br><br>
        
         <label for="videoId">Video ID:</label>
         <input type="text" id="videoId" name="VideoId"><br><br>
