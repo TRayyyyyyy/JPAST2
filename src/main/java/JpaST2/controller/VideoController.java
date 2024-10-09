@@ -102,7 +102,7 @@ public class VideoController extends HttpServlet{
 	        
 	        // xu ly image
 	        String fname = "";
-	        String uploadPath = Constant.UPLOAD_DIRECTORY;
+	        String uploadPath = Constant.UPLOAD_VIDEO;
 	        File uploadDir = new File(uploadPath);
 	        if(!uploadDir.exists()) {
 	        	uploadDir.mkdir();
@@ -133,7 +133,7 @@ public class VideoController extends HttpServlet{
 	        resp.sendRedirect(req.getContextPath() + "/admin/videos");
 	    }
         
-        else if(url.contains("insert")) {
+        else if(url.contains("/video/insert")) {
 	        String id = req.getParameter("VideoId");
 	        String status = req.getParameter("Active");
 	        String desp = req.getParameter("Description");
@@ -154,7 +154,7 @@ public class VideoController extends HttpServlet{
 	        video.setCategory(category);
 	  
 	        String fname = "";
-	        String uploadPath = Constant.UPLOAD_DIRECTORY;
+	        String uploadPath = Constant.UPLOAD_VIDEO;
 	        File uploadDir = new File(uploadPath);
 	        if(!uploadDir.exists()) {
 	        	uploadDir.mkdir();

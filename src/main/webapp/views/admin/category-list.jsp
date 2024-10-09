@@ -31,18 +31,6 @@
 				
 				<img height="150" width="200" src="${imgUrl}" id="images"/> 
 				
-<%-- 				<c:choose> --%>
-<%-- 					<c:when test="${cate.images.contains('http')}"> --%>
-<%-- 						<img height="150" width="200" src="${cate.images}" --%>
-<!-- 							alt="Image not found" id="images" /> -->
-<%-- 					</c:when> --%>
-<%-- 					<c:otherwise> --%>
-<%-- 						<c:url value="/image?fname=${cate.images}" var="imgUrl"></c:url> --%>
-<%-- 						<img height="150" width="200" src="${imgUrl}" --%>
-<!-- 							alt="Image not found" id="images" /> -->
-<%-- 					</c:otherwise> --%>
-<%-- 				</c:choose> --%>
-				
 				<br>
 
 			</td>
